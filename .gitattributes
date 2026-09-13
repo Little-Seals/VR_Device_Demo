@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# 二进制文件：禁止换行符转换，否则 mp4/图片会被损坏
+*.mp4 binary
+*.mov binary
+*.png binary
+*.jpg binary
