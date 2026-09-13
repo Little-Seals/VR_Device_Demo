@@ -2,23 +2,6 @@
 
 本项目是一个力反馈交互设备演示demo，旨在验证力控算法在VR交互场景下的可行性。用户可转动无刷直流电机的输出摇臂，通过串口将电机的角位移同步到 unity 场景中的虚拟连杆上；当虚拟连杆与场景中的障碍物发生碰撞时，Unity 端会实时计算出反馈力矩并通过串口下发给 ESP32，电机随即输出反向力矩，让用户体验到"摸到"虚拟物体的感觉。
 
-## 效果演示
-
-https://github.com/user-attachments/assets/REPLACE_ME（把这一行整行替换为拖拽上传后生成的链接）
-
-
-
-<details>
-<summary>视频无法播放时点这里（备用入口）</summary>
-
-- 点击封面图观看（跳转到视频文件）：
-
-  [![观看演示视频](assets/cover.jpg)](assets/demo_small.mp4)
-
-- 直接下载观看：`assets/demo_small.mp4`（960×1706，45 s，约 7 MB）、`assets/demo.mp4`（原片，1080×1920，约 53 MB）
-
-</details>
-
 ## 系统组成
 
 
