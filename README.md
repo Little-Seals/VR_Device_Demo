@@ -4,7 +4,20 @@
 
 ## 效果演示
 
-<video src="assets/demo.mp4" controls preload="metadata" poster="assets/cover.jpg" width="420"></video>
+https://github.com/user-attachments/assets/REPLACE_ME
+
+转动电机摇臂 → Unity 中的虚拟连杆同步运动 → 碰到障碍物时电机输出反向力矩，可以"摸到"虚拟物体。
+
+<details>
+<summary>视频无法播放时点这里（备用入口）</summary>
+
+- 点击封面图观看（跳转到视频文件）：
+
+  [![观看演示视频](assets/cover.jpg)](assets/demo_small.mp4)
+
+- 直接下载观看：`assets/demo_small.mp4`（960×1706，45 s，约 7 MB）、`assets/demo.mp4`（原片，1080×1920，约 53 MB）
+
+</details>
 
 ## 系统组成
 
@@ -57,9 +70,10 @@
 ```
 Interaction_Demo/
 ├── assets/
-│   ├── demo.mp4                  # 力反馈交互演示视频
+│   ├── demo_720.mp4              # README 内嵌播放用的压缩版（1.9 MB，用于 GitHub 上传）
 │   ├── demo_small.mp4            
-│   └── cover.jpg                 
+│   ├── demo.mp4                  # 原片（1080×1920，约 53 MB，Git LFS 管理）
+│   └── cover.jpg                 # 演示封面图
 ├── ESP32code/                    # ESP32 固件（PlatformIO 工程）
 │   ├── platformio.ini            # 工程配置：lolin32_lite + Simple FOC 2.2.1
 │   ├── src/main.cpp              # 当前固件：接收力矩指令并驱动电机、上报角度
