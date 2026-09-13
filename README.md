@@ -52,11 +52,6 @@
 
 ```
 Interaction_Demo/
-├── assets/
-│   ├── demo_720.mp4              # README 内嵌播放用的压缩版（1.9 MB，用于 GitHub 上传）
-│   ├── demo_small.mp4            
-│   ├── demo.mp4                  # 原片（1080×1920，约 53 MB，Git LFS 管理）
-│   └── cover.jpg                 # 演示封面图
 ├── ESP32code/                    # ESP32 固件（PlatformIO 工程）
 │   ├── platformio.ini            # 工程配置：lolin32_lite + Simple FOC 2.2.1
 │   ├── src/main.cpp              # 当前固件：接收力矩指令并驱动电机、上报角度
