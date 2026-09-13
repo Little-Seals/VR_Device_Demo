@@ -6,7 +6,7 @@
 
 https://github.com/user-attachments/assets/REPLACE_ME（把这一行整行替换为拖拽上传后生成的链接）
 
-转动电机摇臂 → Unity 中的虚拟连杆同步运动 → 碰到障碍物时电机输出反向力矩，可以"摸到"虚拟物体。
+
 
 <details>
 <summary>视频无法播放时点这里（备用入口）</summary>
