@@ -87,7 +87,7 @@ Interaction_Demo/
 
 | 方向 | 指令 | 说明 |
 |---|---|---|
-| Unity → ESP32 | `S` | 握手命令，启动通信；ESP32 回复 `COMMUNICATION_STARTED`。上电 5 秒未收到握手会自动进入通信状态。 |
+| ESP32 → Unity | `T<value>` | 目标角度指令，将编码器测得的电机输出轴角度通过串口同步到unity |
 | Unity → ESP32 | `F<value>` | 目标力矩指令。力矩变化超过 0.005 阈值才发送，且有 0.005 死区抑制浮点噪声。 |
 
 ## 快速开始
