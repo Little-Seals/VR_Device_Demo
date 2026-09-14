@@ -10,34 +10,7 @@
 ## 系统组成
 
 
-<svg viewBox="0 0 680 284" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Unity 与 ESP32 之间的串口力矩控制链路</title>
-<desc>Unity 物理仿真通过 USB 串口以 115200 8N1 向 ESP32 发送力矩指令 F 值，ESP32 通过 SimpleFOC 力矩控制以 PWM 驱动 BLDC 电机，AS5600 通过 I2C 回传角度，ESP32 再以每行一帧的角度数据回传给 Unity。</desc>
-<defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </marker>
-</defs>
-<rect x="228" y="40" width="224" height="116" rx="12" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4 4"/>
-<text class="ts" x="340" y="60" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">串口 USB · 115200 8N1</text>
-<text class="ts" x="340" y="82" text-anchor="middle" dominant-baseline="central" fill="#085041">角度（度，每行一帧）</text>
-<path d="M436 96 H224" fill="none" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text class="ts" x="340" y="120" text-anchor="middle" dominant-baseline="central" fill="#0C447C">力矩指令 F&lt;值&gt;</text>
-<path d="M224 134 H436" fill="none" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arrow)"/>
-<rect x="40" y="66" width="180" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
-<text class="th" x="130" y="86" text-anchor="middle" dominant-baseline="central" fill="#0C447C">Unity 画面渲染</text>
-<text class="ts" x="130" y="108" text-anchor="middle" dominant-baseline="central" fill="#185FA5">刚体物理仿真</text>
-<rect x="440" y="66" width="200" height="64" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text class="th" x="540" y="86" text-anchor="middle" dominant-baseline="central" fill="#085041">ESP32 固件</text>
-<text class="ts" x="540" y="108" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">SimpleFOC 力矩控制</text>
-<path d="M540 130 V200" fill="none" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text class="ts" x="552" y="165" dominant-baseline="central" fill="#085041">PWM</text>
-<path d="M470 200 V130" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text class="ts" x="458" y="165" text-anchor="end" dominant-baseline="central" fill="#5F5E5A">I2C 角度反馈</text>
-<rect x="440" y="200" width="200" height="64" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text class="th" x="540" y="220" text-anchor="middle" dominant-baseline="central" fill="#2C2C2A">BLDC 电机 + AS5600</text>
-<text class="ts" x="540" y="242" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">PWM 驱动 · 磁性编码器</text>
-</svg>
+![Unity 与 ESP32 之间的串口力矩控制链路](Demonstration_Video/serial-link-diagram.png)
 
 
 
